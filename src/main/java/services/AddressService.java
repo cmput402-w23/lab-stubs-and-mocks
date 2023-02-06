@@ -1,10 +1,12 @@
 package services;
 
+import models.Address;
+
 import java.util.List;
 
-public interface City {
+public interface AddressService {
     // External service. May include rate limiting and may be slow due
     // network failures, slow round-trip times, high latency, etc.
     // Thus, cannot afford to test on a real instance. Any way to "mock" it? :)
-    List<String> listCities();
+    List<Address> getAllAddresses();
 }
